@@ -78,10 +78,11 @@ resource "aws_instance" "web" {
               yum install -y nginx
               systemctl start nginx
               systemctl enable nginx
-              echo "<h1>Terraform Free Tier Project 🚀</h1>" > /usr/share/nginx/html/index.html
+              echo "Terraform Free Tier Project"
               EOF
 
   tags = {
     Name = "free-tier-web"
   }
 }
+
