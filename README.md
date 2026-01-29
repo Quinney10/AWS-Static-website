@@ -43,7 +43,7 @@ The EC2 instance runs a web server configured through a user data script, allowi
 To secure the environment, I restricted SSH access to the EC2 instance by allowing only my public IP address to connect over port 22. This was implemented using an AWS security group, ensuring that SSH access is not exposed to the public internet.
 
 ----------------------
-**Error Encountered and Resolution**
+**Errors Encountered and Resolving Them**
 
 While running terraform plan, I encountered the following error:
 
