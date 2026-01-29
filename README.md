@@ -51,7 +51,8 @@ Error: "" isnota validCIDRblock: invalid CIDRaddress withaws_security_group.web_
 
 I discovered this error had occurred because the my_ip variable had been declared but not assigned a value. Terraform attempted to use an empty string as a CIDR block, which is invalid.
 
-Solution
+**Solution**
+
 To resolve this issue, I created a terraform.tfvars file and defined the required variables:
 
 - my_ip = "00.000.000.00/32" 
